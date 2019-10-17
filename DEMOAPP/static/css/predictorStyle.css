@@ -1,0 +1,355 @@
+.formData input{
+
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: "Helvetica";
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom-width: thick;
+    border-bottom-color: #59A8FF;
+    background : #051116 ;
+    width: 25%;
+    color: floralwhite;
+    transition: .3s ease;
+    height: 25px;
+}
+
+.regDropDown{
+     padding-left: 10px;
+    font-size: 16px;
+    font-family: "Helvetica";
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom-width: thick;
+    border-bottom-color: #59A8FF;
+    background : #051116 ;
+    width: 25%;
+    color: floralwhite;
+    transition: .3s ease;
+    height: 25px;
+}
+
+#categories{
+    background-color: #1b1d28;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    background: #091216;
+    margin: 0;
+}
+
+.right{
+    float: right;
+}
+.submit{
+    background-image : linear-gradient(#59A8FF,#F3EFF5,#59A8FF);
+    border: none;
+    padding: 10px 40px 10px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: Helvetica;
+    color: navy;
+    font-weight: bolder;
+}
+.formData {
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.resultRating{
+    width: fit-content;
+    padding: 0.5em 1em;
+    margin-left: 30px;
+    margin-top: 20px;
+    color: #F3EFF5;
+    font-size: 30px;
+    font-family: Frutiger;
+    font weight: bolder;
+
+}
+
+h2{
+    font-family: "SF Pro Display";
+    font-weight: bold;
+    color: #F3EFF5;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.formData h3{
+    font-weight: normal;
+    font-size: 15px;
+        color: floralwhite;
+    font-family: Helvetica;
+}
+.formData p{
+    padding-top: 30px ;
+}
+
+img.image{
+    position: relative;
+    transform-origin: bottom right;
+    width: 570px;
+    height: 580px;
+    opacity: 0;
+    padding: 20px 20px 20px 20px;
+    animation: donutgraph 0.8s ease-in-out 0.8s 1 forwards;
+    transition:  transform .2s;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(#1b1d28,#091216);
+    position: fixed;
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+
+li
+{
+    display: inline;
+    
+    
+}
+li a{
+    display: inline-block;
+    font-family: frutiger;
+    font-size: 18.5px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 12px 0px 12px;
+    text-decoration: none;
+    margin-right: 40px ;
+}
+
+li a:hover{
+    color: cornflowerblue;
+
+    transition : 0.3s ease;
+    
+}
+
+h1{
+    font-style: oblique;
+    font-family: helvetica;
+    font-size: 33px;
+    color: antiquewhite;
+}
+
+img.im1{
+    position: relative;
+    width: 1070px;
+    height: 350px;
+    animation: frontgraph 0.8s ease-in-out 0.8s 1 forwards;
+    opacity: 0;
+    padding-top: 30px;
+}
+
+img.im2{
+    position: relative;
+    transform-origin: bottom;
+    width: 300px;
+    height: 300px;
+    animation: realdonutgraph 0.8s ease-in-out 1.1s 1 forwards;
+    opacity: 0;
+    padding-left: 20px;
+    padding-top: 5px;
+    transition:  transform .2s;
+    
+}
+
+img.im3{
+    position: relative;
+    transform-origin: bottom;
+    width: 350px;
+    height: 300px;
+    opacity: 0;
+    padding-left: 20px;
+    padding-top: 5px;
+    animation: donutgraph 0.8s ease-in-out 1.1s 1 forwards;
+    transition:  transform .2s;
+}
+img.im4{
+    position: relative;
+    transform-origin: bottom;
+    width: 350px;
+    height: 300px;
+    opacity: 0;
+    padding-left: 20px;
+    padding-top: 5px;
+    animation: donutgraph 0.8s ease-in-out 1.1s 1 forwards;
+    transition:  transform .2s;
+}
+
+img.im5{
+    position: relative;
+    width: 1050px;
+    animation: frontgraph 0.8s ease-in-out 0.8s 1 forwards;
+    opacity: 0;
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+img.im6{
+    position: relative;
+    transform-origin: bottom;
+    width: 500px;
+    height: 400px;
+    opacity: 0;
+    padding-left: 25px;
+    padding-top: 5px;
+    animation: donutgraph 0.8s ease-in-out 1.1s 1 forwards;
+    transition:  transform .2s;
+}
+
+.left-dash{
+    padding: 0px 40px 40px 40px;
+    width: 80%;
+    left: 0%;
+    top: 4%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.right-stats{
+    perspective: 1000px;
+    transform-origin: right;
+    width: 21.5%;
+    right: 0%;
+    align-content: center;
+    top: 6%;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    border-left: 5px solid;
+    z-index: -1;
+    background-color: #1b1d28;
+    opacity: 0;
+    animation: statsbar 0.8s ease-in-out 0.3s 1 forwards;
+
+}
+
+.insideBox{
+    position: relative;
+    width: 85%;
+    height: 20%;
+    background-color: #051116;
+
+    border: 20px solid #1b1d28;
+    border-bottom: 0px;
+    border-top-width: 23.5px;
+    border-left-width: 23px ;
+    text-align: center;
+
+}
+
+.headText{
+    font-size: 43px;
+    color: cyan;
+    line-height: 15px;
+    font-family: "Felix Titling";
+}
+
+.statTitle{
+    font-size: 21px;
+    color: #F3EFF5;
+    line-height: 60px;
+    font-family: "Helvetica";
+}
+
+.subtitleText{
+    font-size: 15px;
+    color: #F3EFF5;
+    line-height: 25px;
+    font-family: "Helvetica";
+}
+
+
+.titles{
+    color:#F3EFF5;
+    font-family: Helvetica;
+    font-size: 40px;
+    font-weight: 500;
+    padding-left: 40px;
+    transition: 0.8s ease-in-out 0s ;
+    -webkit-transition: 0.8s ease-in-out 0s ;
+
+   
+}
+
+
+@keyframes frontgraph {
+  0%   { padding-top: 300px; height:100px; opacity: 0;}
+  100% { padding-top: 15px; height: 370px; opacity: 1;}
+}
+
+@keyframes donutgraph{
+    0% { opacity: 0; }
+    100% {opacity: 1; }
+}
+
+img.im3:hover{
+    transform: scale(1.3);
+    z-index: 10;
+    box-shadow: #1b1d28;
+    
+}
+
+img.im2:hover{
+     transform: scale(1.6);
+    z-index: 10;
+}
+
+img.im4:hover{
+     transform: scale(1.7);
+    z-index: 10;
+}
+
+img.im6:hover{
+     transform: scale(1.3);
+    z-index: 10;
+}
+
+
+.stats{
+    perspective: 1000px;
+    transform-origin: right;
+    animation: statsbar 0.8s ease-in-out 1.3s 1 forwards;
+    opacity: 0;
+}
+
+@keyframes statsbar {
+    0%{transform:  rotateY(90deg); opacity: 1; }
+    100%{transform: translateX(0px) rotateY(0deg);opacity: 1;}
+    70%{transform: rotateY(-20deg);}
+}
+
+@keyframes realdonutgraph{
+    0% { opacity: 0;}
+    100% {opacity: 1; }
+}
+
+
+
+
+@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('helveticaneue-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

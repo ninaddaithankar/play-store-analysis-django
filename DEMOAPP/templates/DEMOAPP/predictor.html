@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <link rel="stylesheet" href="{% static 'css/predictorStyle.css' %}">
+    <title> Predictor</title>
+<head>
+    </head>
+    <body>
+        
+       <div class="nav">
+        <ul class='right'>
+            <li><a href="{% url 'home-page' %}">DASHBOARD</a></li>
+            <li><a href="#">PREDICTOR</a></li>
+           </ul>
+        </div>
+        
+       <div class="left-dash">
+           <ul>
+               <li class="titles">Predictor</li>
+               <div>
+                    <form class="formData" method="post">
+                        {% csrf_token %}
+                        <h3>App Name</h3>
+                        {{ form.appName }}
+                        <h3>Category</h3>
+                        {{ form.category }}
+                        <h3>Size</h3>
+                        {{ form.size }}
+                        <h3>Android Version</h3>
+                        {{ form.androidVersion }}
+                        <h3>Price</h3>
+                        {{ form.price }}
+                        <h3>Content Rating</h3>
+                        {{ form.content }}
+                        <h3>Genre</h3>
+                        {{ form.genre }}
+
+                        <p><button type="submit" class="submit">Submit</button>
+
+                    </form>
+               </div>
+           </ul>
+        </div>
+        <div style="margin-left: 460px; padding-top: 100px">
+            <img class="image" src="{% static "images/graphs/predictionGraph.png" %}" alt="Prediction Graph">
+            <div class="resultRating">{{ rating }}</div>
+
+        </div>
+            
+        <div class="right-stats">
+           <div class="insideBox">
+                <span class="statTitle">Apps analyzed</span><p>
+                <span class="headText">{{ no_of_apps }}</span><p>
+                <span class="subtitleText">apps</span>
+
+            </div>
+            <div class="insideBox">
+                <span class="statTitle">Model</span><p>
+                <span class="headText" style=" color : lightgreen ; font-size: 23px">Linear Regression</span><p>
+                <span class="subtitleText">sklearn</span>
+
+            </div>
+            <div class="insideBox">
+                  <span class="statTitle" >Accuracy</span><p>
+                <span class="headText" style="color: pink ">{{ accuracy }}</span><p>
+                <span class="subtitleText">mse</span>
+
+            </div>
+            <div class="insideBox">
+                <span class="statTitle" >Train Test Ratio</span><p>
+                <span class="headText" style="color: #c4d781">{{ train_ratio }} | {{ test_ratio }}</span><p>
+                <span class="subtitleText">Train vs Test</span>
+            </div>
+        </div>
+        </body>
+</html>
+

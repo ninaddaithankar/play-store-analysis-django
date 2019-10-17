@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <link rel="stylesheet" href="{% static 'css/dashboardStyles.css' %}">
+    <title> Data Analytics Dashboard</title>
+<head>
+    </head>
+    <body>
+        
+       <div class="nav">
+           <img class="logo" src="{%  static "images/logo.png" %}">
+        <ul class='right'>
+            <li><a href="#">DASHBOARD</a></li>
+            <li><a href="{% url 'predictor'  %}">PREDICTOR</a></li>
+           </ul>
+        </div>
+        
+       <div class="left-dash">
+           <ul>
+               <li class="titles">Dashboard</li>
+               <div>
+                    <img class="im1 " src="{% static "images/graphs/categoryHistogram.png" %}" alt="category bar graph">
+                    <img class='im2 ' src="{% static "images/graphs/ratingHistogram.png"%}" >
+                    <img class="im3 " src="{% static "images/graphs/contentRatingPie.png"%}" alt="bar graph">
+                    <img class="im4 " src="{% static "images/graphs/categoryPriceBar.png"%}">
+                    <img class="im5 " src="{% static "images/graphs/genreInstallsLine.png"%}">
+                    <img class="im6 " src="{% static "images/graphs/androidHistogramLine.png"%}">
+                    <img class="im7 " src="{% static "images/graphs/androidRatingScatter.png"%}">
+               </div>
+           </ul>
+        </div>
+            
+        <div class="right-stats">
+
+            <div class="insideBox">
+                <span class="statTitle">Apps analyzed</span><p>
+                <span class="headText">{{ no_of_apps }}</span><p>
+                <span class="subtitleText">apps</span>
+            </div>
+            <div class="insideBox">
+                <span class="statTitle" >Average Rating</span><p>
+                <span class="headText" style="color: lightgreen">{{ rating }}</span><p>
+                <span class="subtitleText">stars</span>
+            </div>
+            <div class="insideBox">
+                <span class="statTitle" >Most Preferred</span><p>
+                <span class="headText" style="color: pink">{{ version }}</span><p>
+                <span class="subtitleText">min android version</span>
+            </div>
+            <div class="insideBox">
+                <span class="statTitle" >Price Ratio</span><p>
+                <span class="headText" style="color: #c4d781">{{ zero_ratio }} | {{ non_zero_ratio }}</span><p>
+                <span class="subtitleText">Free vs Paid</span>
+            </div>
+               
+
+        </div>
+        
+        </body>
+</html>
+
